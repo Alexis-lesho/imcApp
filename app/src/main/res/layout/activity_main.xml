@@ -15,12 +15,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Proporcione su peso en kilogramos"
-      android:id="@+id/campo_peso"
+
           />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/campo_estatura"
+
+        android:id="@+id/campo_peso"
         />
     <TextView
         android:layout_width="wrap_content"
@@ -30,7 +31,8 @@
         />
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:id="@+id/campo_estatura"/>
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -39,11 +41,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Calcular"
+            android:onClick="calcularIMC"
             android:id="@+id/boton_calcular"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Limpiar"
+            android:onClick="limpiar"
             android:id="@+id/boton_limpiar"/>
     </LinearLayout>
     <TextView
